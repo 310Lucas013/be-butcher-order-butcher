@@ -11,7 +11,6 @@ import java.util.List;
 @Table(name = "Product")
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private long id;
     @ManyToMany(mappedBy = "products")
