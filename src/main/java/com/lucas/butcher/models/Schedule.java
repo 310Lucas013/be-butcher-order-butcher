@@ -24,7 +24,7 @@ public class Schedule {
     @OneToMany(mappedBy = "schedule", targetEntity = OpenTime.class)
     private List<OpenTime> openTimes;
     @ManyToOne
-    @JoinColumn(name = "Butcher_id")
+    @JoinColumn(name = "butcher_id")
     @JsonIgnore
     private Butcher butcher;
 
