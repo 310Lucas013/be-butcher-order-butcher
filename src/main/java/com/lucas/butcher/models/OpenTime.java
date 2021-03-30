@@ -19,7 +19,7 @@ public class OpenTime {
     @Column(name = "end_time")
     private Date endTime;
     @ManyToOne
-    @JoinColumn(name = "Schedule_id")
+    @JoinColumn(name = "schedule_id")
     @JsonIgnore
     private Schedule schedule;
 

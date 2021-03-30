@@ -20,8 +20,8 @@ public class Butcher {
     @ManyToMany
     @JoinTable(
             name = "butcher_product",
-            joinColumns = @JoinColumn(name = "Butcher_id"),
-            inverseJoinColumns = @JoinColumn(name = "Product_id")
+            joinColumns = @JoinColumn(name = "butcher_id"),
+            inverseJoinColumns = @JoinColumn(name = "product_id")
     )
     private List<Product> products;
 
