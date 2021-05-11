@@ -24,6 +24,8 @@ public class Butcher {
             inverseJoinColumns = @JoinColumn(name = "product_id")
     )
     private List<Product> products;
+    @Column(name = "location_id")
+    private long locationId;
 
     public Butcher() {
 
