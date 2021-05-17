@@ -28,6 +28,8 @@ public class Butcher {
     private long locationId;
     @Column(name = "phone_number")
     private String phoneNumber;
+    @Column(name = "credentials_id")
+    private long credentialsId;
 
     public Butcher() {
 
