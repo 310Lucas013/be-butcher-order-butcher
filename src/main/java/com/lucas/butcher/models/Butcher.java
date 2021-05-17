@@ -26,6 +26,8 @@ public class Butcher {
     private List<Product> products;
     @Column(name = "location_id")
     private long locationId;
+    @Column(name = "phone_number")
+    private String phoneNumber;
 
     public Butcher() {
 

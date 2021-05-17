@@ -38,7 +38,10 @@ public class ButcherController {
 
     @GetMapping
     public ResponseEntity<String> getAllButchers() {
+        System.out.println("Gets called");
         List<Butcher> butchers = butcherService.getAllButchers();
+//        System.out.println(butchers);
+//        System.out.println(butchers.toString());
         Gson gson = initiateGson();
         String result = gson.toJson(butchers);
         return new ResponseEntity<String>(result, HttpStatus.OK);
@@ -76,7 +79,8 @@ public class ButcherController {
     }
 
     private static final List<String> EXCLUDE = new ArrayList<>() {{
-        add("products");
-        add("scheduleList");
+        add("butchers");
+        add("butcher");
+        add("schedule");
     }};
 }
