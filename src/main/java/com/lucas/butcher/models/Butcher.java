@@ -40,7 +40,7 @@ public class Butcher {
         return "Butcher{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", scheduleList=" + scheduleList +
+                ", scheduleList=" + scheduleList.size() +
                 ", products=" + products +
                 ", locationId=" + locationId +
                 ", phoneNumber='" + phoneNumber + '\'' +
