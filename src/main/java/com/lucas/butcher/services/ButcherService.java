@@ -22,4 +22,6 @@ public class ButcherService {
         return this.butcherRepository.findAll();
     }
 
+    public Butcher getButcherByCredentialId(Long id) {return this.butcherRepository.getByCredentialsId(id); }
+
 }

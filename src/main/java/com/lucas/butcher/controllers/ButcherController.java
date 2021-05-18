@@ -55,6 +55,14 @@ public class ButcherController {
         return new ResponseEntity<String>(result, HttpStatus.OK);
     }
 
+    @GetMapping(value = "/credentials/{id}")
+    public ResponseEntity<String> getButcherByCredentialId(@PathVariable("id") Long id) {
+        Butcher butcher = butcherService.getButcherByCredentialId(id);
+        Gson gson = initiateGson();
+        String result = gson.toJson(butcher);
+        return new ResponseEntity<String>(result, HttpStatus.OK);
+    }
+
     private Gson initiateGson() {
         GsonBuilder b = new GsonBuilder();
         b.registerTypeAdapterFactory(HibernateProxyTypeAdapter.FACTORY)

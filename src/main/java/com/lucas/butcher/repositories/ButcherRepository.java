@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ButcherRepository extends JpaRepository<Butcher, Long> {
+    Butcher getByCredentialsId(Long credentialsId);
 }
