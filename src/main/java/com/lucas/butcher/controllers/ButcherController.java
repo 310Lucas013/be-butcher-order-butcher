@@ -57,6 +57,7 @@ public class ButcherController {
 
     @GetMapping(value = "/credentials/{id}")
     public ResponseEntity<String> getButcherByCredentialId(@PathVariable("id") Long id) {
+        System.out.println(id);
         Butcher butcher = butcherService.getButcherByCredentialId(id);
         Gson gson = initiateGson();
         String result = gson.toJson(butcher);

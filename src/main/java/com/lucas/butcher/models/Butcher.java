@@ -34,4 +34,17 @@ public class Butcher {
     public Butcher() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Butcher{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", scheduleList=" + scheduleList +
+                ", products=" + products +
+                ", locationId=" + locationId +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", credentialsId=" + credentialsId +
+                '}';
+    }
 }
